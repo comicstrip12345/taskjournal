@@ -3,100 +3,54 @@
   margin: 0;
 }
 
-section.home {
+body {
   background-color: black;
-  height: 100vh;
 }
 
-section.home .title h1 {
-  margin-top: 17vh;
-  font-size: 15vh;
+nav .container {
+  border-bottom: 1px solid white;
+}
+
+nav .container h1 {
+  color: white;
   font-family: Catamaran;
   font-weight: 900;
-  color: white;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-section.home .taskLink p {
-  font-family: Catamaran;
-  font-weight: 700;
+  margin: 0;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   font-size: 4vh;
 }
 
-section.home .taskLink p span {
-  margin-right: 5vh;
+section.body {
+  margin-top: 2vh;
 }
 
-section.home .task .tasksettings p {
-  font-family: Catamaran;
-  font-weight: 700;
-  font-size: 2.5vh;
-  color: white;
-  margin-bottom: 1vh;
+section.body .menu {
+  padding-bottom: 1vh;
 }
 
-section.home .task .tasksettings input, section.home .task .tasksettings textarea {
-  margin-bottom: 2vh;
-  border: none;
-  border: 1px solid white;
-  background: none;
-  color: white;
-  font-family: Quicksand;
+section.body .menu img {
+  height: 3vh;
+  margin-right: 4vh;
 }
 
-section.home .task .tasksettings input.name {
-  width: 100%;
+section.body .toggle {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
-section.home .task .tasksettings input.date {
-  width: 50%;
-}
-
-section.home .task .tasksettings textarea {
-  height: 15vh;
-  resize: none;
-  width: 76%;
-}
-
-section.home .task .tasksettings input[type=submit] {
-  padding: 1vh;
-  width: 12vh;
-  border-radius: 1vh;
-  font-family: Catamaran;
-  font-weight: 700;
-}
-
-section.home .task .taskNoted button.task {
-  border: none;
-  background-color: white;
-  font-family: Catamaran;
-  font-weight: 700;
-  margin-right: 2vh;
-  margin-bottom: 2vh;
-  padding: 2vh;
-  border-radius: 2vh;
-  text-align: left;
-  width: 40vh;
-}
-
-section.home .task .taskNoted button.task p.name {
-  margin-right: 1vh;
-  font-size: 2.2vh;
-  margin-bottom: 1vh;
-}
-
-section.home .task .taskNoted button.task span.date {
-  font-family: Quicksand;
-  font-size: 1.5vh;
-  font-weight: 400;
-  text-align: right;
+section.body .toggle select {
   float: right;
-  margin-top: 0.7vh;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: Quicksand;
+  padding-right: 2vh;
 }
 
-section.home .task .taskNoted button.task span.message {
+section.body .toggle select option {
+  background: black;
+  border: 1px solid white;
+  color: white;
   font-family: Quicksand;
-  font-size: 2.7vh;
-  font-weight: 400;
 }

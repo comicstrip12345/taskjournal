@@ -1,22 +1,19 @@
-// import React and ReactDOM  libraries
-import React from "react"; // manage components
+import React from "react"; 
+import ReactDOM from "react-dom";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import "./css/index.css";
-import App from "./App";
 
-import {createRoot} from "react-dom/client"; //React18
-
-const container = document.getElementById("root")
-const root = createRoot(container)
-
-
-
-//<App /> 
-
+const App = () => {
+    return(
+        <>
+            <Navbar/>
+            <Body/>
+        </>
+    )
+}
 
 
-// take the react component and show on screen
-// (,san gusto i-output)
-// close yung jsx <jsx/>
-// ReactDOM.render(<App />, document.getElementById("root"))
-
-root.render(<App/>); // React18
+ReactDOM.render(<App/>, document.getElementById("root"))
